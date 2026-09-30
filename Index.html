@@ -1,0 +1,3037 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Samrat Laundry & Drycleaning Service | DLF Phase 3, Gurgaon</title>
+
+    <meta name="description"
+        content="Samrat Laundry & Drycleaning Service in DLF Phase 3, Gurgaon. Wash & Fold, Wash & Iron, Dry Cleaning, Steam Pressing, Shoe Cleaning, Blanket Cleaning and doorstep pickup & delivery.">
+
+    <meta name="keywords"
+        content="laundry DLF Phase 3, dry cleaning Gurgaon, laundry U Block, laundry pickup delivery Gurgaon, Samrat Laundry">
+
+    <meta name="theme-color" content="#0369a1">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            400: '#38bdf8',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            700: '#075985',
+                            800: '#0c4a6e',
+                            900: '#0f172a'
+                        },
+                        accent: {
+                            500: '#25D366',
+                            600: '#128C7E',
+                            700: '#075E54'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .glass-header {
+            background: rgba(255,255,255,.94);
+            backdrop-filter: blur(14px);
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 999px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+
+        .fade-in {
+            animation: fadeIn .4s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(8px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+    <!-- Local Business SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LaundryService",
+        "name": "Samrat Laundry & Drycleaning Service",
+        "telephone": "+91-8527901289",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "U42/08, DLF Phase 3",
+            "addressLocality": "Gurgaon",
+            "addressRegion": "Haryana",
+            "postalCode": "122002",
+            "addressCountry": "IN"
+        },
+        "areaServed": [
+            "DLF Phase 3",
+            "U Block",
+            "Gurgaon",
+            "Cyber City",
+            "DLF Phase 2"
+        ],
+        "priceRange": "₹₹"
+    }
+    </script>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+<!-- =========================================================
+     ANNOUNCEMENT
+========================================================= -->
+
+<div class="bg-gradient-to-r from-brand-800 via-brand-700 to-brand-900 text-white text-xs font-semibold py-2 px-4 text-center">
+    <span class="bg-amber-400 text-slate-900 font-black px-2 py-1 rounded-full mr-2">
+        SPECIAL
+    </span>
+
+    <span>
+        🎉 15% OFF every Tuesday on orders ₹500+
+    </span>
+
+    <a href="#estimator"
+       class="underline ml-2 hover:text-amber-300">
+        Calculate Price →
+    </a>
+</div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="sticky top-0 z-50 glass-header border-b border-slate-200 shadow-sm">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="h-20 flex items-center justify-between">
+
+            <!-- Logo -->
+
+            <a href="#home" class="flex items-center gap-3">
+
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-brand-600 to-cyan-500 text-white flex items-center justify-center shadow">
+                    <i class="fa-solid fa-shirt text-xl"></i>
+                </div>
+
+                <div>
+                    <div class="text-xl sm:text-2xl font-black text-slate-900">
+                        SAMRAT
+                    </div>
+
+                    <div class="text-[10px] sm:text-xs font-bold text-brand-600 tracking-widest uppercase">
+                        Laundry & Drycleaning
+                    </div>
+                </div>
+
+            </a>
+
+
+            <!-- Desktop Navigation -->
+
+            <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold">
+
+                <a href="#home" class="hover:text-brand-600">Home</a>
+
+                <a href="#services" class="hover:text-brand-600">Services</a>
+
+                <a href="#estimator" class="hover:text-brand-600">Price Calculator</a>
+
+                <a href="#rate-card" class="hover:text-brand-600">Pricing</a>
+
+                <a href="#workflow" class="hover:text-brand-600">How It Works</a>
+
+                <a href="#reviews" class="hover:text-brand-600">Reviews</a>
+
+                <a href="#contact" class="hover:text-brand-600">Contact</a>
+
+            </nav>
+
+
+            <!-- Desktop Buttons -->
+
+            <div class="hidden sm:flex gap-2">
+
+                <a href="tel:+918527901289"
+                   class="px-4 py-2.5 rounded-xl border border-slate-200 font-bold text-sm hover:bg-slate-100">
+
+                    <i class="fa-solid fa-phone text-brand-600"></i>
+
+                    Call
+
+                </a>
+
+                <a href="https://wa.me/918527901289"
+                   target="_blank"
+                   class="px-4 py-2.5 rounded-xl bg-accent-500 hover:bg-accent-600 text-white font-bold text-sm">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    WhatsApp
+
+                </a>
+
+            </div>
+
+
+            <!-- Mobile Button -->
+
+            <button id="mobile-menu-toggle"
+                    class="lg:hidden p-3 rounded-xl hover:bg-slate-100"
+                    aria-label="Open menu">
+
+                <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Mobile Menu -->
+
+    <div id="mobile-menu"
+         class="hidden lg:hidden bg-white border-t border-slate-200 px-5 py-5 space-y-3">
+
+        <a href="#home" class="mobile-link block py-2 font-semibold">Home</a>
+
+        <a href="#services" class="mobile-link block py-2 font-semibold">Services</a>
+
+        <a href="#estimator" class="mobile-link block py-2 font-semibold">Price Calculator</a>
+
+        <a href="#rate-card" class="mobile-link block py-2 font-semibold">Pricing</a>
+
+        <a href="#workflow" class="mobile-link block py-2 font-semibold">How It Works</a>
+
+        <a href="#delivery" class="mobile-link block py-2 font-semibold">Delivery Policy</a>
+
+        <a href="#reviews" class="mobile-link block py-2 font-semibold">Reviews</a>
+
+        <a href="#contact" class="mobile-link block py-2 font-semibold">Contact</a>
+
+        <div class="pt-3 border-t border-slate-100 space-y-2">
+
+            <a href="tel:+918527901289"
+               class="block text-center py-3 rounded-xl bg-slate-900 text-white font-bold">
+
+                <i class="fa-solid fa-phone"></i>
+                +91 8527901289
+
+            </a>
+
+            <a href="https://wa.me/918527901289"
+               target="_blank"
+               class="block text-center py-3 rounded-xl bg-accent-500 text-white font-bold">
+
+                <i class="fa-brands fa-whatsapp"></i>
+                WhatsApp Order
+
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section id="home"
+         class="relative overflow-hidden bg-gradient-to-b from-brand-50 via-white to-slate-50 py-14 lg:py-24">
+
+    <div class="absolute top-10 right-10 w-80 h-80 bg-cyan-200/40 rounded-full blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+
+            <div class="lg:col-span-7">
+
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-800 text-xs font-bold border border-brand-200">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    DLF Phase 3, Gurgaon
+
+                </div>
+
+
+                <h1 class="mt-6 text-4xl sm:text-5xl lg:text-6xl font-black leading-tight text-slate-900">
+
+                    Professional
+                    <span class="text-brand-600">
+                        Laundry &
+                    </span>
+
+                    Dry Cleaning
+
+                    <span class="block">
+                        At Your Doorstep
+                    </span>
+
+                </h1>
+
+
+                <p class="mt-6 text-lg text-slate-600 max-w-2xl leading-relaxed">
+
+                    Wash & Fold, Wash & Iron, Dry Cleaning, Steam Pressing,
+                    Shoe Cleaning and Blanket Cleaning with convenient
+                    doorstep pickup and delivery in Gurgaon.
+
+                </p>
+
+
+                <!-- Offer -->
+
+                <div class="mt-6 max-w-xl p-4 rounded-2xl bg-gradient-to-r from-amber-500 to-orange-500 text-white">
+
+                    <div class="flex items-center gap-3">
+
+                        <div class="w-11 h-11 rounded-xl bg-white/20 flex items-center justify-center">
+                            <i class="fa-solid fa-tags text-xl"></i>
+                        </div>
+
+                        <div>
+
+                            <div class="text-xs uppercase font-black tracking-wider">
+                                Tuesday Special
+                            </div>
+
+                            <div class="font-bold">
+                                15% OFF on orders ₹500+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CTA -->
+
+                <div class="mt-7 flex flex-col sm:flex-row gap-3">
+
+                    <a href="https://wa.me/918527901289?text=Hello%20Samrat%20Laundry,%20I%20want%20to%20book%20a%20pickup."
+                       target="_blank"
+                       class="px-7 py-4 rounded-2xl bg-accent-500 hover:bg-accent-600 text-white font-black text-center shadow-lg">
+
+                        <i class="fa-brands fa-whatsapp text-xl mr-2"></i>
+
+                        Book Pickup on WhatsApp
+
+                    </a>
+
+
+                    <a href="#estimator"
+                       class="px-7 py-4 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-center">
+
+                        <i class="fa-solid fa-calculator mr-2"></i>
+
+                        Calculate Price
+
+                    </a>
+
+                </div>
+
+
+                <!-- Features -->
+
+                <div class="mt-10 pt-7 border-t border-slate-200 grid grid-cols-3 gap-3">
+
+                    <div class="text-center">
+
+                        <i class="fa-solid fa-truck-fast text-brand-600 text-xl"></i>
+
+                        <div class="mt-2 font-bold text-sm">
+                            Free Pickup
+                        </div>
+
+                        <div class="text-xs text-slate-500">
+                            4 KG minimum
+                        </div>
+
+                    </div>
+
+
+                    <div class="text-center">
+
+                        <i class="fa-solid fa-clock text-brand-600 text-xl"></i>
+
+                        <div class="mt-2 font-bold text-sm">
+                            2-Day Standard
+                        </div>
+
+                        <div class="text-xs text-slate-500">
+                            Faster options available
+                        </div>
+
+                    </div>
+
+
+                    <div class="text-center">
+
+                        <i class="fa-solid fa-shield-heart text-brand-600 text-xl"></i>
+
+                        <div class="mt-2 font-bold text-sm">
+                            Fabric Care
+                        </div>
+
+                        <div class="text-xs text-slate-500">
+                            Careful processing
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Hero Card -->
+
+            <div class="lg:col-span-5">
+
+                <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-100">
+
+                    <div class="flex justify-between items-center border-b pb-4">
+
+                        <div>
+
+                            <h2 class="font-black text-xl">
+                                Popular Services
+                            </h2>
+
+                            <p class="text-xs text-slate-500">
+                                Quick booking available
+                            </p>
+
+                        </div>
+
+                        <span class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold">
+
+                            ● Open
+
+                        </span>
+
+                    </div>
+
+
+                    <div class="mt-5 space-y-3">
+
+                        <div class="p-4 bg-slate-50 rounded-2xl flex justify-between items-center">
+
+                            <div class="flex gap-3 items-center">
+
+                                <i class="fa-solid fa-scale-balanced text-brand-600 text-xl"></i>
+
+                                <div>
+                                    <div class="font-bold text-sm">
+                                        Wash & Fold
+                                    </div>
+
+                                    <div class="text-xs text-slate-500">
+                                        From ₹55/kg
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <span class="font-black text-brand-600">
+                                ₹55
+                            </span>
+
+                        </div>
+
+
+                        <div class="p-4 bg-slate-50 rounded-2xl flex justify-between items-center">
+
+                            <div class="flex gap-3 items-center">
+
+                                <i class="fa-solid fa-shirt text-cyan-600 text-xl"></i>
+
+                                <div>
+                                    <div class="font-bold text-sm">
+                                        Wash & Iron
+                                    </div>
+
+                                    <div class="text-xs text-slate-500">
+                                        Steam iron finish
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <span class="font-black text-brand-600">
+                                ₹65/kg
+                            </span>
+
+                        </div>
+
+
+                        <div class="p-4 bg-slate-50 rounded-2xl flex justify-between items-center">
+
+                            <div class="flex gap-3 items-center">
+
+                                <i class="fa-solid fa-user-tie text-purple-600 text-xl"></i>
+
+                                <div>
+                                    <div class="font-bold text-sm">
+                                        Coat & Pant
+                                    </div>
+
+                                    <div class="text-xs text-slate-500">
+                                        Dry cleaning
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <span class="font-black text-brand-600">
+                                ₹250
+                            </span>
+
+                        </div>
+
+
+                        <div class="p-4 bg-slate-50 rounded-2xl flex justify-between items-center">
+
+                            <div class="flex gap-3 items-center">
+
+                                <i class="fa-solid fa-shoe-prints text-amber-600 text-xl"></i>
+
+                                <div>
+                                    <div class="font-bold text-sm">
+                                        Shoe Cleaning
+                                    </div>
+
+                                    <div class="text-xs text-slate-500">
+                                        Deep cleaning
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <span class="font-black text-brand-600">
+                                ₹250
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="#estimator"
+                       class="mt-6 block text-center py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold">
+
+                        Start Price Calculator
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SERVICES
+========================================================= -->
+
+<section id="services" class="py-16 bg-white">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-3xl mx-auto">
+
+            <span class="text-xs font-black uppercase tracking-wider text-brand-600">
+                Our Services
+            </span>
+
+            <h2 class="mt-2 text-3xl sm:text-4xl font-black text-slate-900">
+                Complete Garment Care
+            </h2>
+
+            <p class="mt-3 text-slate-600">
+                One place for your regular laundry and premium garment-care needs.
+            </p>
+
+        </div>
+
+
+        <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+            <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200">
+
+                <i class="fa-solid fa-shirt text-3xl text-brand-600"></i>
+
+                <h3 class="mt-4 font-black">
+                    Wash & Fold
+                </h3>
+
+                <p class="mt-2 text-sm text-slate-500">
+                    Everyday clothes washed, dried and neatly folded.
+                </p>
+
+                <div class="mt-4 font-black text-brand-600">
+                    ₹55/kg
+                </div>
+
+            </div>
+
+
+            <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200">
+
+                <i class="fa-solid fa-shirt text-3xl text-cyan-600"></i>
+
+                <h3 class="mt-4 font-black">
+                    Wash & Iron
+                </h3>
+
+                <p class="mt-2 text-sm text-slate-500">
+                    Complete washing with professional ironing.
+                </p>
+
+                <div class="mt-4 font-black text-brand-600">
+                    ₹65/kg
+                </div>
+
+            </div>
+
+
+            <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200">
+
+                <i class="fa-solid fa-user-tie text-3xl text-purple-600"></i>
+
+                <h3 class="mt-4 font-black">
+                    Dry Cleaning
+                </h3>
+
+                <p class="mt-2 text-sm text-slate-500">
+                    Professional care for suits, sarees and delicate garments.
+                </p>
+
+                <div class="mt-4 font-black text-brand-600">
+                    From ₹100
+                </div>
+
+            </div>
+
+
+            <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200">
+
+                <i class="fa-solid fa-shoe-prints text-3xl text-amber-600"></i>
+
+                <h3 class="mt-4 font-black">
+                    Shoe & Blanket Cleaning
+                </h3>
+
+                <p class="mt-2 text-sm text-slate-500">
+                    Deep cleaning for footwear, blankets and household items.
+                </p>
+
+                <div class="mt-4 font-black text-brand-600">
+                    From ₹250
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PRICE ESTIMATOR
+========================================================= -->
+
+<section id="estimator" class="py-16 bg-slate-100">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-3xl mx-auto mb-10">
+
+            <span class="text-xs font-black uppercase tracking-wider text-brand-600">
+                Instant Estimate
+            </span>
+
+            <h2 class="mt-2 text-3xl sm:text-4xl font-black">
+                Calculate Your Laundry Price
+            </h2>
+
+            <p class="mt-3 text-slate-600">
+                Select quantity and send your estimated order directly to WhatsApp.
+            </p>
+
+        </div>
+
+
+        <div class="grid lg:grid-cols-12 gap-8">
+
+            <!-- LEFT -->
+
+            <div class="lg:col-span-7 bg-white rounded-3xl border border-slate-200 p-6 sm:p-8">
+
+                <!-- KG -->
+
+                <div>
+
+                    <div class="flex justify-between items-center border-b pb-3 mb-5">
+
+                        <h3 class="font-black text-lg">
+                            <i class="fa-solid fa-scale-balanced text-brand-600 mr-2"></i>
+                            Laundry by KG
+                        </h3>
+
+                        <span class="text-xs font-bold bg-brand-50 text-brand-700 px-3 py-1 rounded-lg">
+                            Minimum 4 KG
+                        </span>
+
+                    </div>
+
+
+                    <div class="grid sm:grid-cols-2 gap-4">
+
+                        <!-- Fold -->
+
+                        <div class="p-4 rounded-2xl bg-slate-50 border">
+
+                            <div class="flex justify-between">
+
+                                <div>
+                                    <div class="font-bold text-sm">
+                                        Wash & Fold
+                                    </div>
+
+                                    <div class="text-xs text-slate-500">
+                                        ₹55/kg
+                                    </div>
+                                </div>
+
+                                <strong class="text-brand-600">
+                                    ₹55
+                                </strong>
+
+                            </div>
+
+                            <div class="mt-4 flex items-center gap-3">
+
+                                <input id="slider-wash-fold"
+                                       type="range"
+                                       min="0"
+                                       max="20"
+                                       step="0.5"
+                                       value="0"
+                                       class="w-full accent-brand-600">
+
+                                <span id="val-wash-fold"
+                                      class="w-16 text-right text-xs font-bold">
+                                    0 KG
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Iron -->
+
+                        <div class="p-4 rounded-2xl bg-slate-50 border">
+
+                            <div class="flex justify-between">
+
+                                <div>
+                                    <div class="font-bold text-sm">
+                                        Wash & Iron
+                                    </div>
+
+                                    <div class="text-xs text-slate-500">
+                                        ₹65/kg
+                                    </div>
+                                </div>
+
+                                <strong class="text-brand-600">
+                                    ₹65
+                                </strong>
+
+                            </div>
+
+                            <div class="mt-4 flex items-center gap-3">
+
+                                <input id="slider-wash-iron"
+                                       type="range"
+                                       min="0"
+                                       max="20"
+                                       step="0.5"
+                                       value="0"
+                                       class="w-full accent-brand-600">
+
+                                <span id="val-wash-iron"
+                                      class="w-16 text-right text-xs font-bold">
+                                    0 KG
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STEAM PRESS -->
+
+                <div class="mt-8">
+
+                    <h3 class="font-black text-lg border-b pb-3">
+                        <i class="fa-solid fa-shirt text-cyan-600 mr-2"></i>
+                        Steam Pressing
+                    </h3>
+
+                    <div class="mt-4 p-4 bg-slate-50 border rounded-2xl flex justify-between items-center">
+
+                        <div>
+
+                            <div class="font-bold">
+                                Steam Pressing
+                            </div>
+
+                            <div class="text-xs text-slate-500">
+                                ₹15 per piece
+                            </div>
+
+                        </div>
+
+                        <div class="flex items-center gap-2 bg-white border rounded-xl p-1">
+
+                            <button onclick="adjustQty('steampress',-1)"
+                                    class="w-8 h-8 rounded-lg bg-slate-100 font-black">
+                                −
+                            </button>
+
+                            <span id="qty-steampress"
+                                  class="w-8 text-center font-bold">
+                                0
+                            </span>
+
+                            <button onclick="adjustQty('steampress',1)"
+                                    class="w-8 h-8 rounded-lg bg-brand-600 text-white font-black">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DRY CLEAN -->
+
+                <div class="mt-8">
+
+                    <h3 class="font-black text-lg border-b pb-3">
+                        <i class="fa-solid fa-user-tie text-purple-600 mr-2"></i>
+                        Dry Cleaning
+                    </h3>
+
+                    <div id="dryclean-grid"
+                         class="mt-4 grid sm:grid-cols-2 gap-3">
+                    </div>
+
+                </div>
+
+
+                <!-- TUESDAY -->
+
+                <div id="offer-box"
+                     class="mt-8 p-4 rounded-2xl bg-amber-50 border border-amber-200">
+
+                    <div class="flex gap-3 items-center">
+
+                        <i class="fa-solid fa-tags text-amber-600 text-xl"></i>
+
+                        <div>
+
+                            <div class="font-black text-sm">
+                                Tuesday Special — 15% OFF
+                            </div>
+
+                            <div id="offer-status"
+                                 class="text-xs text-slate-600">
+                                Available every Tuesday on orders ₹500+.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CUSTOMER -->
+
+                <div class="mt-8 pt-6 border-t">
+
+                    <h3 class="font-black text-lg">
+                        <i class="fa-solid fa-truck text-brand-600 mr-2"></i>
+                        Pickup Details
+                    </h3>
+
+
+                    <div class="mt-4 grid sm:grid-cols-2 gap-4">
+
+                        <div>
+
+                            <label class="text-xs font-bold">
+                                Name *
+                            </label>
+
+                            <input id="pickup-name"
+                                   type="text"
+                                   class="mt-1 w-full px-4 py-3 rounded-xl border"
+                                   placeholder="Your name">
+
+                        </div>
+
+
+                        <div>
+
+                            <label class="text-xs font-bold">
+                                Pickup Time
+                            </label>
+
+                            <select id="pickup-time"
+                                    class="mt-1 w-full px-4 py-3 rounded-xl border">
+
+                                <option>Morning (8 AM - 12 PM)</option>
+
+                                <option>Afternoon (12 PM - 4 PM)</option>
+
+                                <option>Evening (4 PM - 8 PM)</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mt-4">
+
+                        <label class="text-xs font-bold">
+                            Pickup Address *
+                        </label>
+
+                        <input id="pickup-address"
+                               type="text"
+                               class="mt-1 w-full px-4 py-3 rounded-xl border"
+                               placeholder="U42/08, DLF Phase 3">
+
+                    </div>
+
+
+                    <div class="mt-4">
+
+                        <label class="text-xs font-bold">
+                            Special Instructions
+                        </label>
+
+                        <textarea id="pickup-notes"
+                                  rows="3"
+                                  class="mt-1 w-full px-4 py-3 rounded-xl border"
+                                  placeholder="Any stain, delicate garment or special instruction"></textarea>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SUMMARY -->
+
+            <div class="lg:col-span-5">
+
+                <div class="lg:sticky lg:top-24 bg-slate-900 text-white rounded-3xl p-6 sm:p-8">
+
+                    <div class="flex justify-between items-center border-b border-slate-700 pb-4">
+
+                        <div>
+
+                            <h3 class="text-xl font-black">
+                                Order Estimate
+                            </h3>
+
+                            <p class="text-xs text-slate-400">
+                                Final amount verified at pickup
+                            </p>
+
+                        </div>
+
+                        <button onclick="resetEstimator()"
+                                class="text-xs text-rose-400 font-bold">
+
+                            Reset
+
+                        </button>
+
+                    </div>
+
+
+                    <div id="cart-summary"
+                         class="mt-5 space-y-2 max-h-64 overflow-y-auto custom-scrollbar">
+
+                        <div class="text-center py-8 text-slate-500 text-sm">
+                            No items selected.
+                        </div>
+
+                    </div>
+
+
+                    <div class="mt-5 pt-5 border-t border-slate-700 space-y-3">
+
+                        <div class="flex justify-between text-slate-400">
+
+                            <span>Subtotal</span>
+
+                            <strong id="subtotal">
+                                ₹0
+                            </strong>
+
+                        </div>
+
+
+                        <div id="discount-row"
+                             class="hidden flex justify-between text-amber-400">
+
+                            <span>
+                                Tuesday Discount (15%)
+                            </span>
+
+                            <strong id="discount">
+                                -₹0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="flex justify-between text-slate-400 text-sm">
+
+                            <span>
+                                Pickup & Delivery
+                            </span>
+
+                            <span class="text-emerald-400 font-bold">
+                                FREE*
+                            </span>
+
+                        </div>
+
+
+                        <div class="pt-4 border-t border-slate-700 flex justify-between items-center">
+
+                            <span class="font-black">
+                                Estimated Total
+                            </span>
+
+                            <span id="grand-total"
+                                  class="text-2xl font-black text-emerald-400">
+                                ₹0
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <button onclick="sendWhatsAppOrder()"
+                            class="mt-6 w-full py-4 rounded-2xl bg-accent-500 hover:bg-accent-600 text-white font-black">
+
+                        <i class="fa-brands fa-whatsapp text-2xl mr-2"></i>
+
+                        Send Order on WhatsApp
+
+                    </button>
+
+
+                    <p class="mt-4 text-[11px] text-center text-slate-400">
+                        *Free pickup & delivery subject to applicable minimum order/service area.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     RATE CARD
+========================================================= -->
+
+<section id="rate-card" class="py-16 bg-white">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center">
+
+            <span class="text-xs font-black uppercase text-brand-600">
+                Transparent Pricing
+            </span>
+
+            <h2 class="mt-2 text-3xl sm:text-4xl font-black">
+                Rate Card
+            </h2>
+
+            <p class="mt-3 text-slate-600">
+                Clear pricing for laundry and dry-cleaning services.
+            </p>
+
+        </div>
+
+
+        <!-- Tabs -->
+
+        <div class="mt-8 flex justify-center overflow-x-auto">
+
+            <div class="flex gap-2 bg-slate-100 p-1.5 rounded-2xl">
+
+                <button onclick="showRate('gents')"
+                        id="tab-gents"
+                        class="rate-tab active px-4 py-2.5 rounded-xl text-sm font-bold bg-white text-brand-700 shadow">
+                    Gents
+                </button>
+
+                <button onclick="showRate('ladies')"
+                        id="tab-ladies"
+                        class="rate-tab px-4 py-2.5 rounded-xl text-sm font-bold">
+                    Ladies
+                </button>
+
+                <button onclick="showRate('household')"
+                        id="tab-household"
+                        class="rate-tab px-4 py-2.5 rounded-xl text-sm font-bold">
+                    Household
+                </button>
+
+                <button onclick="showRate('footwear')"
+                        id="tab-footwear"
+                        class="rate-tab px-4 py-2.5 rounded-xl text-sm font-bold">
+                    Shoes & Bags
+                </button>
+
+                <button onclick="showRate('kg')"
+                        id="tab-kg"
+                        class="rate-tab px-4 py-2.5 rounded-xl text-sm font-bold">
+                    KG Rates
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="max-w-4xl mx-auto mt-8">
+
+            <!-- GENTS -->
+
+            <div id="rate-gents" class="rate-panel grid sm:grid-cols-2 gap-4">
+
+                <RateItem name="Shirt" price="₹100"/>
+                <RateItem name="Pant" price="₹100"/>
+                <RateItem name="Coat & Pant" price="₹250"/>
+                <RateItem name="Blazer / Coat" price="₹200"/>
+                <RateItem name="2-Piece Suit" price="₹300"/>
+                <RateItem name="3-Piece Suit" price="₹400"/>
+                <RateItem name="Kurta Pajama" price="₹160"/>
+                <RateItem name="Sherwani / Heavy Kurta" price="₹350"/>
+
+            </div>
+
+
+            <!-- LADIES -->
+
+            <div id="rate-ladies"
+                 class="rate-panel hidden grid sm:grid-cols-2 gap-4">
+
+                <RateItem name="Plain Saree" price="₹250"/>
+                <RateItem name="Heavy / Embroidered Saree" price="₹300"/>
+                <RateItem name="Lehenga / Heavy Wear" price="₹500"/>
+                <RateItem name="Salwar Suit" price="₹200"/>
+                <RateItem name="Blouse / Top" price="₹100"/>
+                <RateItem name="Gown / One Piece" price="₹250"/>
+
+            </div>
+
+
+            <!-- HOUSEHOLD -->
+
+            <div id="rate-household"
+                 class="rate-panel hidden grid sm:grid-cols-2 gap-4">
+
+                <RateItem name="Single Blanket / Quilt" price="₹300"/>
+                <RateItem name="Double / Heavy Blanket" price="₹400"/>
+                <RateItem name="Double Bedsheet + Covers" price="₹150"/>
+                <RateItem name="Curtain Panel" price="₹100"/>
+                <RateItem name="Sofa Cover Set" price="₹450"/>
+
+            </div>
+
+
+            <!-- FOOTWEAR -->
+
+            <div id="rate-footwear"
+                 class="rate-panel hidden grid sm:grid-cols-2 gap-4">
+
+                <RateItem name="Sports / Canvas Shoes" price="₹250"/>
+                <RateItem name="Suede / Leather Shoes" price="₹350"/>
+                <RateItem name="Backpack / Travel Bag" price="₹200"/>
+                <RateItem name="Leather Handbag / Purse" price="₹250"/>
+
+            </div>
+
+
+            <!-- KG -->
+
+            <div id="rate-kg"
+                 class="rate-panel hidden grid sm:grid-cols-2 gap-4">
+
+                <RateItem name="Wash & Fold" price="₹55 / KG"/>
+                <RateItem name="Wash & Iron" price="₹65 / KG"/>
+                <RateItem name="Steam Press" price="₹15 / Piece"/>
+                <RateItem name="Next Day Wash & Fold" price="₹65 / KG"/>
+                <RateItem name="Next Day Wash & Iron" price="₹85 / KG"/>
+                <RateItem name="Same Day Wash & Fold" price="₹120 / KG"/>
+                <RateItem name="Same Day Wash & Iron" price="₹150 / KG"/>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     WORKFLOW
+========================================================= -->
+
+<section id="workflow"
+         class="py-16 bg-slate-900 text-white">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-3xl mx-auto">
+
+            <span class="text-xs font-black uppercase text-brand-400">
+                Our Process
+            </span>
+
+            <h2 class="mt-2 text-3xl sm:text-4xl font-black">
+                How It Works
+            </h2>
+
+            <p class="mt-3 text-slate-400">
+                Simple, systematic and convenient garment care.
+            </p>
+
+        </div>
+
+
+        <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+            <Step number="01"
+                  icon="fa-truck-pickup"
+                  title="Pickup"
+                  text="We collect your clothes from your doorstep."/>
+
+            <Step number="02"
+                  icon="fa-tags"
+                  title="Inspection & Tagging"
+                  text="Clothes are checked, counted and tagged."/>
+
+            <Step number="03"
+                  icon="fa-soap"
+                  title="Washing / Cleaning"
+                  text="Clothes are processed according to fabric and service."/>
+
+            <Step number="04"
+                  icon="fa-shirt"
+                  title="Ironing & Folding"
+                  text="Professional finishing and neat folding."/>
+
+            <Step number="05"
+                  icon="fa-magnifying-glass"
+                  title="Quality Check"
+                  text="Final inspection before packing."/>
+
+            <Step number="06"
+                  icon="fa-box"
+                  title="Packing"
+                  text="Clean garments are packed carefully."/>
+
+            <Step number="07"
+                  icon="fa-house"
+                  title="Delivery"
+                  text="Ready-to-wear clothes delivered to your doorstep."/>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     DELIVERY POLICY
+========================================================= -->
+
+<section id="delivery" class="py-16 bg-slate-50">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center">
+
+            <span class="text-xs font-black uppercase text-brand-600">
+                Pickup & Delivery
+            </span>
+
+            <h2 class="mt-2 text-3xl sm:text-4xl font-black">
+                Delivery Policy
+            </h2>
+
+            <p class="mt-3 text-slate-600">
+                Standard delivery is 2 days after pickup.
+            </p>
+
+        </div>
+
+
+        <div class="mt-10 grid md:grid-cols-3 gap-6">
+
+            <div class="bg-white p-6 rounded-3xl border-2 border-brand-500">
+
+                <span class="text-xs font-black text-brand-600 uppercase">
+                    Primary Area
+                </span>
+
+                <h3 class="mt-3 text-xl font-black">
+                    DLF Phase 3 / U Block
+                </h3>
+
+                <ul class="mt-5 space-y-3 text-sm text-slate-600">
+
+                    <li>
+                        <i class="fa-solid fa-check text-emerald-500 mr-2"></i>
+                        Minimum 4 KG
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check text-emerald-500 mr-2"></i>
+                        Pickup & Delivery available
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check text-emerald-500 mr-2"></i>
+                        Standard: 2 Days
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="bg-white p-6 rounded-3xl border">
+
+                <span class="text-xs font-black text-brand-600 uppercase">
+                    Nearby Areas
+                </span>
+
+                <h3 class="mt-3 text-xl font-black">
+                    Phase 2 / Cyber City
+                </h3>
+
+                <ul class="mt-5 space-y-3 text-sm text-slate-600">
+
+                    <li>
+                        <i class="fa-solid fa-check text-emerald-500 mr-2"></i>
+                        Pickup available
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check text-emerald-500 mr-2"></i>
+                        Minimum order may apply
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check text-emerald-500 mr-2"></i>
+                        Standard: 2 Days
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="bg-white p-6 rounded-3xl border">
+
+                <span class="text-xs font-black text-brand-600 uppercase">
+                    Other Areas
+                </span>
+
+                <h3 class="mt-3 text-xl font-black">
+                    Gurgaon & Nearby
+                </h3>
+
+                <ul class="mt-5 space-y-3 text-sm text-slate-600">
+
+                    <li>
+                        <i class="fa-solid fa-check text-emerald-500 mr-2"></i>
+                        Distance-based service
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check text-emerald-500 mr-2"></i>
+                        Minimum order may apply
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check text-emerald-500 mr-2"></i>
+                        Confirm on WhatsApp
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="mt-8 max-w-3xl mx-auto bg-brand-50 border border-brand-200 rounded-2xl p-5 text-sm text-brand-900">
+
+            <strong>Important:</strong>
+
+            Pickup and delivery availability depends on distance and order size.
+            Please confirm your area and pickup requirement on WhatsApp before placing the order.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     REVIEWS
+========================================================= -->
+
+<section id="reviews" class="py-16 bg-white">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-3xl mx-auto">
+
+            <span class="text-xs font-black uppercase text-brand-600">
+                Customer Reviews
+            </span>
+
+            <h2 class="mt-2 text-3xl sm:text-4xl font-black">
+                What Our Customers Say
+            </h2>
+
+            <p class="mt-3 text-slate-600">
+                Customer feedback submitted through our website.
+            </p>
+
+        </div>
+
+
+        <!-- Database Reviews -->
+
+        <div id="reviews-grid"
+             class="mt-10 grid md:grid-cols-3 gap-6">
+
+            <div class="md:col-span-3 text-center py-10 text-slate-500">
+                Loading reviews...
+            </div>
+
+        </div>
+
+
+        <!-- Review Form -->
+
+        <div class="max-w-2xl mx-auto mt-12 bg-slate-50 border rounded-3xl p-6 sm:p-8">
+
+            <div class="text-center">
+
+                <h3 class="text-2xl font-black">
+                    Write a Review
+                </h3>
+
+                <p class="mt-2 text-sm text-slate-500">
+                    Share your experience with Samrat Laundry.
+                </p>
+
+            </div>
+
+
+            <form id="review-form"
+                  class="mt-6 space-y-4">
+
+                <div class="grid sm:grid-cols-2 gap-4">
+
+                    <div>
+
+                        <label class="text-xs font-bold">
+                            Name *
+                        </label>
+
+                        <input id="review-name"
+                               required
+                               maxlength="80"
+                               class="mt-1 w-full px-4 py-3 rounded-xl border"
+                               placeholder="Your name">
+
+                    </div>
+
+
+                    <div>
+
+                        <label class="text-xs font-bold">
+                            Locality *
+                        </label>
+
+                        <input id="review-location"
+                               required
+                               maxlength="100"
+                               class="mt-1 w-full px-4 py-3 rounded-xl border"
+                               placeholder="DLF Phase 3">
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <label class="text-xs font-bold">
+                        Rating *
+                    </label>
+
+                    <select id="review-rating"
+                            class="mt-1 w-full px-4 py-3 rounded-xl border">
+
+                        <option value="5">⭐⭐⭐⭐⭐ 5/5</option>
+
+                        <option value="4">⭐⭐⭐⭐ 4/5</option>
+
+                        <option value="3">⭐⭐⭐ 3/5</option>
+
+                        <option value="2">⭐⭐ 2/5</option>
+
+                        <option value="1">⭐ 1/5</option>
+
+                    </select>
+
+                </div>
+
+
+                <div>
+
+                    <label class="text-xs font-bold">
+                        Your Review *
+                    </label>
+
+                    <textarea id="review-comment"
+                              required
+                              maxlength="1000"
+                              rows="4"
+                              class="mt-1 w-full px-4 py-3 rounded-xl border"
+                              placeholder="Tell us about your experience"></textarea>
+
+                </div>
+
+
+                <button type="submit"
+                        id="review-submit"
+                        class="w-full py-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-black">
+
+                    Submit Review
+
+                </button>
+
+            </form>
+
+
+            <div id="review-message"
+                 class="hidden mt-4 p-4 rounded-xl text-center text-sm font-bold">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section id="contact" class="py-16 bg-slate-900 text-white">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center">
+
+            <span class="text-xs font-black uppercase text-brand-400">
+                Contact Samrat Laundry
+            </span>
+
+            <h2 class="mt-2 text-3xl sm:text-4xl font-black">
+                Ready to Book Your Pickup?
+            </h2>
+
+            <p class="mt-3 text-slate-400">
+                Call or WhatsApp us for pickup, pricing and service availability.
+            </p>
+
+        </div>
+
+
+        <div class="mt-10 grid md:grid-cols-3 gap-5">
+
+            <a href="tel:+918527901289"
+               class="p-6 rounded-3xl bg-slate-800 hover:bg-slate-700 text-center">
+
+                <i class="fa-solid fa-phone text-3xl text-brand-400"></i>
+
+                <h3 class="mt-4 font-black">
+                    Call Us
+                </h3>
+
+                <p class="mt-2 text-slate-400">
+                    +91 8527901289
+                </p>
+
+            </a>
+
+
+            <a href="https://wa.me/918527901289"
+               target="_blank"
+               class="p-6 rounded-3xl bg-slate-800 hover:bg-slate-700 text-center">
+
+                <i class="fa-brands fa-whatsapp text-3xl text-emerald-400"></i>
+
+                <h3 class="mt-4 font-black">
+                    WhatsApp
+                </h3>
+
+                <p class="mt-2 text-slate-400">
+                    Book Pickup
+                </p>
+
+            </a>
+
+
+            <a href="https://www.google.com/maps/search/?api=1&query=U42%2F08%20DLF%20Phase%203%20Gurgaon"
+               target="_blank"
+               class="p-6 rounded-3xl bg-slate-800 hover:bg-slate-700 text-center">
+
+                <i class="fa-solid fa-location-dot text-3xl text-rose-400"></i>
+
+                <h3 class="mt-4 font-black">
+                    Location
+                </h3>
+
+                <p class="mt-2 text-slate-400">
+                    U42/08, DLF Phase 3
+                </p>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="bg-slate-950 text-slate-400 py-10">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <div>
+
+                <div class="text-2xl font-black text-white">
+                    SAMRAT
+                </div>
+
+                <div class="text-xs tracking-widest text-brand-400 font-bold uppercase">
+                    Laundry & Drycleaning Service
+                </div>
+
+                <p class="mt-4 text-sm leading-relaxed">
+                    Professional laundry and dry-cleaning services
+                    with convenient pickup and delivery in Gurgaon.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="font-black text-white">
+                    Quick Links
+                </h3>
+
+                <div class="mt-4 grid grid-cols-2 gap-2 text-sm">
+
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#estimator">Calculator</a>
+                    <a href="#rate-card">Pricing</a>
+                    <a href="#workflow">How It Works</a>
+                    <a href="#reviews">Reviews</a>
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="font-black text-white">
+                    Contact
+                </h3>
+
+                <div class="mt-4 space-y-3 text-sm">
+
+                    <div>
+                        <i class="fa-solid fa-phone text-brand-400 mr-2"></i>
+                        +91 8527901289
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-location-dot text-brand-400 mr-2"></i>
+                        U42/08, DLF Phase 3, Gurgaon
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-clock text-brand-400 mr-2"></i>
+                        7:30 AM - 9:30 PM
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="mt-10 pt-6 border-t border-slate-800 text-xs text-center">
+
+            © 2026 Samrat Laundry & Drycleaning Service.
+            All rights reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+/* =========================================================
+   SUPABASE CONFIGURATION
+========================================================= */
+
+/*
+    IMPORTANT:
+    Replace these two values with your Supabase project details.
+
+    Example:
+
+    const SUPABASE_URL =
+        "https://xxxxxxxxxxxx.supabase.co";
+
+    const SUPABASE_ANON_KEY =
+        "eyJhbGciOiJIUzI1NiIs...";
+
+    NEVER put your service_role / secret key here.
+*/
+
+const SUPABASE_URL = "YOUR_SUPABASE_PROJECT_URL";
+
+const SUPABASE_ANON_KEY = "YOUR_SUPABASE_ANON_KEY";
+
+
+let supabaseClient = null;
+
+if (
+    SUPABASE_URL !== "YOUR_SUPABASE_PROJECT_URL" &&
+    SUPABASE_ANON_KEY !== "YOUR_SUPABASE_ANON_KEY"
+) {
+    supabaseClient =
+        window.supabase.createClient(
+            SUPABASE_URL,
+            SUPABASE_ANON_KEY
+        );
+}
+
+
+/* =========================================================
+   RATE ITEM WEB COMPONENT
+========================================================= */
+
+class RateItem extends HTMLElement {
+
+    connectedCallback() {
+
+        const name = this.getAttribute("name");
+        const price = this.getAttribute("price");
+
+        this.outerHTML = `
+            <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 flex justify-between items-center">
+                <span class="font-semibold text-sm text-slate-800">
+                    ${name}
+                </span>
+
+                <span class="font-black text-brand-600">
+                    ${price}
+                </span>
+            </div>
+        `;
+    }
+
+}
+
+customElements.define("rate-item", RateItem);
+
+
+/* =========================================================
+   PRODUCT CATALOG
+========================================================= */
+
+const catalog = [
+
+    {
+        id: "shirt",
+        name: "Shirt",
+        price: 100,
+        icon: "fa-shirt"
+    },
+
+    {
+        id: "pant",
+        name: "Pant",
+        price: 100,
+        icon: "fa-shirt"
+    },
+
+    {
+        id: "coatpant",
+        name: "Coat & Pant",
+        price: 250,
+        icon: "fa-user-tie"
+    },
+
+    {
+        id: "saree",
+        name: "Saree",
+        price: 300,
+        icon: "fa-person-dress"
+    },
+
+    {
+        id: "blanket",
+        name: "Blanket",
+        price: 400,
+        icon: "fa-bed"
+    },
+
+    {
+        id: "shoes",
+        name: "Shoes",
+        price: 250,
+        icon: "fa-shoe-prints"
+    }
+
+];
+
+
+/* =========================================================
+   ESTIMATOR STATE
+========================================================= */
+
+const state = {
+
+    washFold: 0,
+
+    washIron: 0,
+
+    steamPress: 0
+
+};
+
+catalog.forEach(item => {
+    state[item.id] = 0;
+});
+
+
+/* =========================================================
+   BUILD DRY CLEAN ITEMS
+========================================================= */
+
+function buildCatalog() {
+
+    const grid =
+        document.getElementById("dryclean-grid");
+
+    grid.innerHTML = "";
+
+    catalog.forEach(item => {
+
+        const card =
+            document.createElement("div");
+
+        card.className =
+            "p-4 bg-slate-50 rounded-2xl border flex items-center justify-between";
+
+        card.innerHTML = `
+
+            <div class="flex items-center gap-3">
+
+                <div class="w-9 h-9 rounded-lg bg-brand-100 text-brand-700 flex items-center justify-center">
+
+                    <i class="fa-solid ${item.icon}"></i>
+
+                </div>
+
+                <div>
+
+                    <div class="font-bold text-sm">
+                        ${item.name}
+                    </div>
+
+                    <div class="text-xs font-bold text-brand-600">
+                        ₹${item.price}
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="flex items-center gap-2 bg-white border rounded-xl p-1">
+
+                <button
+                    onclick="adjustQty('${item.id}',-1)"
+                    class="w-7 h-7 rounded-lg bg-slate-100 font-black">
+                    −
+                </button>
+
+                <span
+                    id="qty-${item.id}"
+                    class="w-6 text-center text-sm font-bold">
+                    0
+                </span>
+
+                <button
+                    onclick="adjustQty('${item.id}',1)"
+                    class="w-7 h-7 rounded-lg bg-brand-600 text-white font-black">
+                    +
+                </button>
+
+            </div>
+
+        `;
+
+        grid.appendChild(card);
+
+    });
+
+}
+
+
+/* =========================================================
+   QUANTITY
+========================================================= */
+
+function adjustQty(id, amount) {
+
+    state[id] =
+        Math.max(
+            0,
+            (state[id] || 0) + amount
+        );
+
+    const element =
+        document.getElementById(`qty-${id}`);
+
+    if (element) {
+        element.textContent = state[id];
+    }
+
+    calculate();
+
+}
+
+
+/* =========================================================
+   SLIDERS
+========================================================= */
+
+document
+    .getElementById("slider-wash-fold")
+    .addEventListener("input", function () {
+
+        state.washFold =
+            parseFloat(this.value);
+
+        document
+            .getElementById("val-wash-fold")
+            .textContent =
+            `${state.washFold.toFixed(1)} KG`;
+
+        calculate();
+
+    });
+
+
+document
+    .getElementById("slider-wash-iron")
+    .addEventListener("input", function () {
+
+        state.washIron =
+            parseFloat(this.value);
+
+        document
+            .getElementById("val-wash-iron")
+            .textContent =
+            `${state.washIron.toFixed(1)} KG`;
+
+        calculate();
+
+    });
+
+
+/* =========================================================
+   CALCULATE
+========================================================= */
+
+function calculate() {
+
+    let subtotal = 0;
+
+    const items = [];
+
+
+    if (state.washFold > 0) {
+
+        const cost =
+            state.washFold * 55;
+
+        subtotal += cost;
+
+        items.push({
+            name: `Wash & Fold — ${state.washFold} KG`,
+            cost
+        });
+
+    }
+
+
+    if (state.washIron > 0) {
+
+        const cost =
+            state.washIron * 65;
+
+        subtotal += cost;
+
+        items.push({
+            name: `Wash & Iron — ${state.washIron} KG`,
+            cost
+        });
+
+    }
+
+
+    if (state.steamPress > 0) {
+
+        const cost =
+            state.steamPress * 15;
+
+        subtotal += cost;
+
+        items.push({
+            name: `Steam Press — ${state.steamPress} pcs`,
+            cost
+        });
+
+    }
+
+
+    catalog.forEach(item => {
+
+        const quantity =
+            state[item.id] || 0;
+
+        if (quantity > 0) {
+
+            const cost =
+                quantity * item.price;
+
+            subtotal += cost;
+
+            items.push({
+                name: `${item.name} × ${quantity}`,
+                cost
+            });
+
+        }
+
+    });
+
+
+    const summary =
+        document.getElementById("cart-summary");
+
+
+    if (items.length === 0) {
+
+        summary.innerHTML = `
+            <div class="text-center py-8 text-slate-500 text-sm">
+                No items selected.
+            </div>
+        `;
+
+    } else {
+
+        summary.innerHTML =
+            items.map(item => `
+
+                <div class="flex justify-between gap-4 py-2 border-b border-slate-800">
+
+                    <span class="text-slate-300 text-xs">
+                        ${item.name}
+                    </span>
+
+                    <strong class="text-white text-xs">
+                        ₹${item.cost}
+                    </strong>
+
+                </div>
+
+            `).join("");
+
+    }
+
+
+    /*
+        Tuesday offer:
+        Only Tuesday AND subtotal >= ₹500.
+    */
+
+    const today =
+        new Date().getDay();
+
+    const isTuesday =
+        today === 2;
+
+    let discount = 0;
+
+    if (isTuesday && subtotal >= 500) {
+
+        discount =
+            Math.round(subtotal * 0.15);
+
+        document
+            .getElementById("discount-row")
+            .classList.remove("hidden");
+
+        document
+            .getElementById("offer-status")
+            .textContent =
+            "Today's Tuesday offer is active: 15% OFF on orders ₹500+.";
+
+    } else {
+
+        document
+            .getElementById("discount-row")
+            .classList.add("hidden");
+
+        if (isTuesday) {
+
+            document
+                .getElementById("offer-status")
+                .textContent =
+                "Tuesday offer available when your order reaches ₹500.";
+
+        } else {
+
+            document
+                .getElementById("offer-status")
+                .textContent =
+                "Available every Tuesday on orders ₹500+.";
+
+        }
+
+    }
+
+
+    const total =
+        Math.max(
+            0,
+            subtotal - discount
+        );
+
+
+    document
+        .getElementById("subtotal")
+        .textContent =
+        `₹${subtotal}`;
+
+    document
+        .getElementById("discount")
+        .textContent =
+        `-₹${discount}`;
+
+    document
+        .getElementById("grand-total")
+        .textContent =
+        `₹${total}`;
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+function resetEstimator() {
+
+    state.washFold = 0;
+
+    state.washIron = 0;
+
+    state.steamPress = 0;
+
+    catalog.forEach(item => {
+        state[item.id] = 0;
+
+        const element =
+            document.getElementById(`qty-${item.id}`);
+
+        if (element) {
+            element.textContent = "0";
+        }
+    });
+
+
+    document
+        .getElementById("slider-wash-fold")
+        .value = 0;
+
+    document
+        .getElementById("slider-wash-iron")
+        .value = 0;
+
+
+    document
+        .getElementById("val-wash-fold")
+        .textContent = "0.0 KG";
+
+    document
+        .getElementById("val-wash-iron")
+        .textContent = "0.0 KG";
+
+
+    document
+        .getElementById("qty-steampress")
+        .textContent = "0";
+
+
+    calculate();
+
+}
+
+
+/* =========================================================
+   WHATSAPP ORDER
+========================================================= */
+
+function sendWhatsAppOrder() {
+
+    const name =
+        document
+            .getElementById("pickup-name")
+            .value.trim();
+
+    const address =
+        document
+            .getElementById("pickup-address")
+            .value.trim();
+
+    const time =
+        document
+            .getElementById("pickup-time")
+            .value;
+
+    const notes =
+        document
+            .getElementById("pickup-notes")
+            .value.trim();
+
+
+    if (!name || !address) {
+
+        alert(
+            "Please enter your name and pickup address."
+        );
+
+        return;
+    }
+
+
+    let subtotal = 0;
+
+    const lines = [];
+
+
+    if (state.washFold > 0) {
+
+        const cost =
+            state.washFold * 55;
+
+        subtotal += cost;
+
+        lines.push(
+            `Wash & Fold: ${state.washFold} KG — ₹${cost}`
+        );
+
+    }
+
+
+    if (state.washIron > 0) {
+
+        const cost =
+            state.washIron * 65;
+
+        subtotal += cost;
+
+        lines.push(
+            `Wash & Iron: ${state.washIron} KG — ₹${cost}`
+        );
+
+    }
+
+
+    if (state.steamPress > 0) {
+
+        const cost =
+            state.steamPress * 15;
+
+        subtotal += cost;
+
+        lines.push(
+            `Steam Press: ${state.steamPress} pcs — ₹${cost}`
+        );
+
+    }
+
+
+    catalog.forEach(item => {
+
+        const qty =
+            state[item.id] || 0;
+
+        if (qty > 0) {
+
+            const cost =
+                qty * item.price;
+
+            subtotal += cost;
+
+            lines.push(
+                `${item.name}: ${qty} pcs — ₹${cost}`
+            );
+
+        }
+
+    });
+
+
+    if (lines.length === 0) {
+
+        alert(
+            "Please select at least one service."
+        );
+
+        return;
+    }
+
+
+    const isTuesday =
+        new Date().getDay() === 2;
+
+    const discount =
+        isTuesday && subtotal >= 500
+            ? Math.round(subtotal * 0.15)
+            : 0;
+
+
+    const total =
+        subtotal - discount;
+
+
+    let message =
+`*NEW SAMRAT LAUNDRY PICKUP ORDER*
+
+*Customer:* ${name}
+
+*Pickup Address:* ${address}
+
+*Preferred Time:* ${time}
+
+*Order:*
+${lines.join("\n")}
+
+*Subtotal:* ₹${subtotal}`;
+
+    if (discount > 0) {
+
+        message +=
+            `\n*Tuesday Discount (15%):* -₹${discount}`;
+
+    }
+
+    message +=
+`\n*Estimated Total:* ₹${total}
+
+*Notes:* ${notes || "None"}
+
+Please confirm my pickup.`;
+
+
+    const url =
+        "https://wa.me/918527901289?text=" +
+        encodeURIComponent(message);
+
+
+    window.open(
+        url,
+        "_blank",
+        "noopener"
+    );
+
+}
+
+
+/* =========================================================
+   RATE TABS
+========================================================= */
+
+function showRate(name) {
+
+    document
+        .querySelectorAll(".rate-panel")
+        .forEach(panel => {
+
+            panel.classList.add("hidden");
+
+        });
+
+
+    document
+        .querySelectorAll(".rate-tab")
+        .forEach(tab => {
+
+            tab.classList.remove(
+                "bg-white",
+                "text-brand-700",
+                "shadow"
+            );
+
+        });
+
+
+    document
+        .getElementById(`rate-${name}`)
+        .classList.remove("hidden");
+
+
+    document
+        .getElementById(`tab-${name}`)
+        .classList.add(
+            "bg-white",
+            "text-brand-700",
+            "shadow"
+        );
+
+}
+
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+const mobileToggle =
+    document.getElementById(
+        "mobile-menu-toggle"
+    );
+
+const mobileMenu =
+    document.getElementById(
+        "mobile-menu"
+    );
+
+
+mobileToggle.addEventListener(
+    "click",
+    function () {
+
+        mobileMenu.classList.toggle(
+            "hidden"
+        );
+
+        const icon =
+            document.getElementById(
+                "menu-icon"
+            );
+
+        if (
+            mobileMenu.classList.contains(
+                "hidden"
+            )
+        ) {
+
+            icon.className =
+                "fa-solid fa-bars text-xl";
+
+        } else {
+
+            icon.className =
+                "fa-solid fa-xmark text-xl";
+
+        }
+
+    }
+);
+
+
+document
+    .querySelectorAll(".mobile-link")
+    .forEach(link => {
+
+        link.addEventListener(
+            "click",
+            function () {
+
+                mobileMenu.classList.add(
+                    "hidden"
+                );
+
+                document
+                    .getElementById("menu-icon")
+                    .className =
+                    "fa-solid fa-bars text-xl";
+
+            }
+        );
+
+    });
+
+
+/* =========================================================
+   SUPABASE REVIEWS
+========================================================= */
+
+function starsHTML(rating) {
+
+    let html = "";
+
+    for (
+        let i = 0;
+        i < rating;
+        i++
+    ) {
+
+        html +=
+            '<i class="fa-solid fa-star"></i>';
+
+    }
+
+    return html;
+
+}
+
+
+function createReviewCard(review) {
+
+    const card =
+        document.createElement("div");
+
+    card.className =
+        "fade-in bg-slate-50 p-6 rounded-2xl border border-slate-200";
+
+
+    const stars =
+        document.createElement("div");
+
+    stars.className =
+        "text-amber-400 text-sm";
+
+    stars.innerHTML =
+        starsHTML(review.rating);
+
+
+    const comment =
+        document.createElement("p");
+
+    comment.className =
+        "mt-3 text-sm text-slate-600 leading-relaxed";
+
+    comment.textContent =
+        `"${review.comment}"`;
+
+
+    const footer =
+        document.createElement("div");
+
+    footer.className =
+        "mt-4 pt-3 border-t border-slate-200";
+
+
+    const name =
+        document.createElement("div");
+
+    name.className =
+        "font-black text-sm text-slate-900";
+
+    name.textContent =
+        review.name;
+
+
+    const location =
+        document.createElement("div");
+
+    location.className =
+        "text-xs text-slate-400 mt-1";
+
+    location.textContent =
+        review.location;
+
+
+    footer.appendChild(name);
+
+    footer.appendChild(location);
+
+    card.appendChild(stars);
+
+    card.appendChild(comment);
+
+    card.appendChild(footer);
+
+
+    return card;
+
+}
+
+
+/* =========================================================
+   LOAD REVIEWS
+========================================================= */
+
+async function loadReviews() {
+
+    const grid =
+        document.getElementById(
+            "reviews-grid"
+        );
+
+
+    if (!supabaseClient) {
+
+        grid.innerHTML = `
+
+            <div class="md:col-span-3 bg-amber-50 border border-amber-200 rounded-2xl p-5 text-center text-sm text-amber-800">
+
+                Reviews database is not connected yet.
+                Add your Supabase Project URL and public anon key
+                in the JavaScript configuration.
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    const {
+        data,
+        error
+    } = await supabaseClient
+        .from("reviews")
+        .select(
+            "id,name,location,rating,comment,created_at"
+        )
+        .order(
+            "created_at",
+            {
+                ascending: false
+            }
+        );
+
+
+    if (error) {
+
+        console.error(
+            "Review loading error:",
+            error
+        );
+
+        grid.innerHTML = `
+
+            <div class="md:col-span-3 text-center text-slate-500">
+                Reviews could not be loaded right now.
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    grid.innerHTML = "";
+
+
+    if (!data || data.length === 0) {
+
+        grid.innerHTML = `
+
+            <div class="md:col-span-3 text-center bg-slate-50 border rounded-2xl p-8">
+
+                <div class="text-amber-400 text-xl">
+                    ★★★★★
+                </div>
+
+                <p class="mt-3 text-slate-500 text-sm">
+                    Be the first customer to submit a review.
+                </p>
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    data.forEach(review => {
+
+        grid.appendChild(
+            createReviewCard(review)
+        );
+
+    });
+
+}
+
+
+/* =========================================================
+   SUBMIT REVIEW
+========================================================= */
+
+document
+    .getElementById("review-form")
+    .addEventListener(
+        "submit",
+        async function (event) {
+
+            event.preventDefault();
+
+
+            if (!supabaseClient) {
+
+                showReviewMessage(
+                    "Review system is not connected yet. Please add your Supabase settings.",
+                    false
+                );
+
+                return;
+
+            }
+
+
+            const name =
+                document
+                    .getElementById("review-name")
+                    .value
+                    .trim();
+
+            const location =
+                document
+                    .getElementById("review-location")
+                    .value
+                    .trim();
+
+            const rating =
+                parseInt(
+                    document
+                        .getElementById("review-rating")
+                        .value
+                );
+
+            const comment =
+                document
+                    .getElementById("review-comment")
+                    .value
+                    .trim();
+
+
+            if (
+                name.length < 2 ||
+                location.length < 2 ||
+                comment.length < 5
+            ) {
+
+                showReviewMessage(
+                    "Please enter valid review details.",
+                    false
+                );
+
+                return;
+
+            }
+
+
+            const button =
+                document.getElementById(
+                    "review-submit"
+                );
+
+
+            button.disabled = true;
+
+            button.textContent =
+                "Submitting...";
+
+
+            const {
+                data,
+                error
+            } = await supabaseClient
+                .from("reviews")
+                .insert([
+                    {
+                        name,
+                        location,
+                        rating,
+                        comment
+                    }
+                ])
+                .select()
+                .single();
+
+
+            button.disabled = false;
+
+            button.textContent =
+                "Submit Review";
+
+
+            if (error) {
+
+                console.error(
+                    "Review submit error:",
+                    error
+                );
+
+                showReviewMessage(
+                    "Review could not be submitted. Please try again.",
+                    false
+                );
+
+                return;
+
+            }
+
+
+            document
+                .getElementById("review-form")
+                .reset();
+
+
+            showReviewMessage(
+                "Thank you! Your review has been saved successfully.",
+                true
+            );
+
+
+            const grid =
+                document.getElementById(
+                    "reviews-grid"
+                );
+
+
+            /*
+                If first review, remove
+                "be first" message.
+            */
+
+            if (
+                grid.children.length === 1 &&
+                grid.children[0].textContent.includes(
+                    "Be the first"
+                )
+            ) {
+
+                grid.innerHTML = "";
+
+            }
+
+
+            grid.prepend(
+                createReviewCard(data)
+            );
+
+        }
+    );
+
+
+function showReviewMessage(
+    message,
+    success
+) {
+
+    const box =
+        document.getElementById(
+            "review-message"
+        );
+
+
+    box.textContent =
+        message;
+
+
+    box.className =
+        success
+
+            ? "mt-4 p-4 rounded-xl text-center text-sm font-bold bg-emerald-50 text-emerald-700"
+
+            : "mt-4 p-4 rounded-xl text-center text-sm font-bold bg-rose-50 text-rose-700";
+
+
+    setTimeout(
+        () => {
+            box.classList.add("hidden");
+        },
+        5000
+    );
+
+}
+
+
+/* =========================================================
+   INITIALIZE
+========================================================= */
+
+buildCatalog();
+
+calculate();
+
+loadReviews();
+
+</script>
+
+</body>
+</html>
